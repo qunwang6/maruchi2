@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <title>旅行会社MARUCHI</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" />
+</head>
+<body onLoad="disp()">
+<body>
+    <div id="masthead">
+        <h1><img alt="logo" src="images/logo.gif" /></h1>
+        <ul id="nav">
+            <li><a class="active" title="home" href="index.html">Home</a></li>
+            <li><a title="services" href="services.html">案内</a></li>
+            <li><a title="旅行情報" href="guid.html">旅行情報</a></li>
+            <li><a title="Contact" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div id="wrap">
+        <div id="header">
+            
+            <h1>MARUCHI旅行会社ご案内 </h1>
+			<div id="center">
+			<p><a href="link1.html">おすすめ観光コース</a></p>
+			
+			<a href="link1.html">
+			<img alt="案内" src="images/7.jpg" />
+			</a>
+			<SCRIPT LANGUAGE="JavaScript">
+	var msg;
+	msg="Welcome to MARUCHIME旅行会社。。。。。。。。。。";
+	msg=msg+msg+msg+msg;
+	function disp(){
+		setTimeout("disp()",100);
+		msg=msg.substring(2,msg.length)+msg.substring(0,2);
+		document.MyForm.box.value=msg;
+		
+	}
+</SCRIPT>
+<FORM NAME="MyForm">
+<INPUT NAME="box" TYPE="text" SIZE=80>
+</FORM>
+</div>
+  
+        <div id="footer">
+            <p>Copyright MARUCHI旅行会社 </p>
+        </div>
+    </div>
+</body>
+</html>
